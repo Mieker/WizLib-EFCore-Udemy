@@ -1,0 +1,15 @@
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_DataAccess.deps.json
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_DataAccess.dll
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_DataAccess.pdb
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_Model.dll
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_Model.pdb
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.csprojAssemblyReference.cache
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.AssemblyInfoInputs.cache
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.AssemblyInfo.cs
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.csproj.CopyComplete
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.dll
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.pdb
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_DataAccess.runtimeconfig.json
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\bin\Debug\netcoreapp3.1\WizLib_DataAccess.runtimeconfig.dev.json
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Marcin\source\repos\WizLib\WizLib_DataAccess\obj\Debug\netcoreapp3.1\WizLib_DataAccess.genruntimeconfig.cache
