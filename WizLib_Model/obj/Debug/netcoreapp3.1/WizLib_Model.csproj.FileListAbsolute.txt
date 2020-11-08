@@ -4,6 +4,6 @@ C:\Users\Marcin\source\repos\WizLib\WizLib_Model\bin\Debug\netcoreapp3.1\WizLib_
 C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.csprojAssemblyReference.cache
 C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.AssemblyInfoInputs.cache
 C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.AssemblyInfo.cs
-C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.csproj.CoreCompileInputs.cache
 C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.dll
 C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.pdb
+C:\Users\Marcin\source\repos\WizLib\WizLib_Model\obj\Debug\netcoreapp3.1\WizLib_Model.csproj.CoreCompileInputs.cache
