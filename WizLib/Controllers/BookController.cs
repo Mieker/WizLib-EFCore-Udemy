@@ -21,6 +21,11 @@ namespace WizLib.Controllers
         public IActionResult Index()
         {
             List<Book> objList = _db.Books.ToList();
+            foreach (var obj in objList)
+            {
+                //obj.Publisher = _db.Publishers.FirstOrDefault(p => p.Publisher_Id == obj.Publisher_Id);
+                _db.Entry(obj).Reference(o => o.Publisher).Load();
+            }
             return View(objList);
         }
 
@@ -44,33 +49,67 @@ namespace WizLib.Controllers
             return View(obj);
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public IActionResult Upsert(Author author)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        if (author.Author_Id == 0)
-        //        {
-        //            _db.Authors.Add(author);
-        //        }
-        //        else
-        //        {
-        //            _db.Authors.Update(author);
-        //        }
-        //        _db.SaveChanges();
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(author);
-        //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(BookVM obj)
+        {
+                if (obj.Book.Book_Id == 0)
+                {
+                    _db.Books.Add(obj.Book);
+                }
+                else
+                {
+                    _db.Books.Update(obj.Book);
+                }
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+        }
 
-        //public IActionResult Delete(int id)
-        //{
-        //    var author = _db.Authors.FirstOrDefault(a => a.Author_Id == id);
-        //    _db.Authors.Remove(author);
-        //    _db.SaveChanges();
+        public IActionResult Details(int? id)
+        {
+            BookVM obj = new BookVM();
+            
+            if (id == null)
+            {
+                return View(obj);
+            }
+            obj.Book = _db.Books.FirstOrDefault(b => b.Book_Id == id);
+            obj.Book.BookDetail = _db.BookDetails.FirstOrDefault(bd => bd.BookDetail_Id == obj.Book.BookDetail_Id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
 
-        //    return RedirectToAction(nameof(Index));
-        //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Details(BookVM obj)
+        {
+            if (obj.Book.BookDetail.BookDetail_Id == 0)
+            {
+                _db.BookDetails.Add(obj.Book.BookDetail);
+                _db.SaveChanges();
+
+                var BookFromDb = _db.Books.FirstOrDefault(b => b.Book_Id == obj.Book.Book_Id);
+                BookFromDb.BookDetail_Id = obj.Book.BookDetail.BookDetail_Id;
+                _db.SaveChanges();
+            }
+            else
+            {
+                _db.BookDetails.Update(obj.Book.BookDetail);
+                _db.SaveChanges();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var book = _db.Books.FirstOrDefault(b => b.Book_Id == id);
+            _db.Books.Remove(book);
+            _db.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
