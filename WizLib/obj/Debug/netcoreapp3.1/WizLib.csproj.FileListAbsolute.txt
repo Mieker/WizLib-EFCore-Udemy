@@ -428,3 +428,4 @@ C:\Users\Marcin\source\repos\WizLib\WizLib\bin\Debug\netcoreapp3.1\Microsoft.Asp
 C:\Users\Marcin\source\repos\WizLib\WizLib\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Marcin\source\repos\WizLib\WizLib\obj\Debug\netcoreapp3.1\Razor\Views\Book\Upsert.cshtml.g.cs
 C:\Users\Marcin\source\repos\WizLib\WizLib\obj\Debug\netcoreapp3.1\Razor\Views\Book\Details.cshtml.g.cs
+C:\Users\Marcin\source\repos\WizLib\WizLib\obj\Debug\netcoreapp3.1\Razor\Views\Book\ManageAuthors.cshtml.g.cs
